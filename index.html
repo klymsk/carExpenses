@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авто-витрати</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <header>
+        <a href = "index.html">
+            <img src = "assets/logo.png">
+            <h1>CarExpenses</h1>
+        </a>
+    </header>
+
+    <main id = "mainContainer">
+        <h2>Загальна історія витрат</h2>
+
+        <article>
+            <section class = "container">
+                <h3>Витрата №<span>1</span></h3>
+
+                <div class = "info">
+                    <div class = "infoBlock">
+                        <p>Категорія</p>
+                        <span>Паливо</span>
+                    </div>
+
+                    <div class = "infoBlock">
+                        <p>Дата</p>
+                        <span>03.04.2025</span>
+                    </div>
+
+                    <div class = "infoBlock">
+                        <p>Ціна</p>
+                        <span>300</span>
+                    </div>
+
+                    <div class = "infoBlock">
+                        <p>Пробіг</p>
+                        <span>5300</span>
+                    </div>
+                </div>
+
+                <div class = "buttons">
+                    <button>
+                        <img src = "assets/edit.png">
+                    </button>
+                    <button>
+                        <img src = "assets/delete.png">
+                    </button>
+                </div>
+            </section>
+        </article>
+
+        <button class = "addButton" id = "addButton">+</button>
+    </main>
+
+    <script src = "script.js"></script>
+</body>
+</html>
