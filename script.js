@@ -1,8 +1,13 @@
 const addButton = document.getElementById("addButton");
+const analyticsButton = document.getElementById("analyticButton");
 const main = document.getElementById("mainContainer");
 
 addButton.addEventListener("click", function() {
     window.location.href = "input.html";
+});
+
+analyticsButton.addEventListener("click", function() {
+    window.location.href = "analytics.html";
 });
 
 
