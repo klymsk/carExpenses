@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Авто-витрати</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href = "stylesInput.css">
+    </head>
+<body>
+    <header>
+        <a href = "index.html">
+            <img src = "assets/logo.png">
+            <h1>CarExpenses</h1>
+        </a>
+    </header>
+
+    <main>
+        <h3>Додати новий запис</h3>
+     
+        <div class = "info">
+            <div class = "infoBlock">
+                <p>Категорія</p>
+                <select id = "categoryInput">
+                    <option value = "Паливо">Паливо</option>
+                    <option value = "Масло">Масло</option>
+                    <option value = "Аксесуари">Аксесуари</option>
+                    <option value = "Інше">Інше</option>
+                </select>
+            </div>
+     
+            <div class = "infoBlock">
+                <p>Дата</p>
+                <input type = "date" id = "dateInput">
+            </div>
+     
+            <div class = "infoBlock">
+                <p>Ціна</p>
+                <input type = "number" id = "priceInput">
+            </div>
+     
+            <div class = "infoBlock">
+                <p>Пробіг</p>
+                <input type = "number" id = "mileageInput">
+            </div>
+        </div>
+     
+        <button id = "saveButton">Додати</button>
+    </main>
+
+    <script src = "scriptInput.js"></script>
+</body>
+</html>
