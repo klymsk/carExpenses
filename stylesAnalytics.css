@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --beige-color: #FBF8EF;
+    --dark-brown-color: #493628;
+    --brown-color: #7E634F;
+    --gray-color: #4F4F4F;
+    --white-color: #FFFFFF;
+    --font-family: "Unbounded";
+    --font-weight-black: 800;
+    --font-weight-medium: 400;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    background-color: var(--beige-color);
+}
+
+header a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+header h1 {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-black);
+    font-size: 0.75rem;
+    color: var(--gray-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 1.5rem;
+    width: 100%;
+}
+
+main h2 {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-black);
+    font-size: 0.75rem;
+    color: var(--gray-color);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container {
+    display: flex;
+    gap: 3rem;
+    background-color: var(--dark-brown-color);
+    border-radius: 20px;
+    padding: 1.5rem 5rem 1.5rem 1rem;
+    width: 70%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.container:nth-child(2n) {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--brown-color);
+    width: 70%;
+    padding: 1.5rem 1rem 1.5rem 5rem;
+    margin-left: 5rem;
+}
+
+.container img {
+    position: absolute;
+    right: -1rem;
+    filter: blur(1px);
+}
+
+.right {
+    position: absolute;
+    left: -1rem;
+    filter: blur(1px);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info p {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-medium);
+    font-size: 0.75rem;
+    color: var(--beige-color);
+}
+
+.info span {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-medium);
+    font-size: 1.5rem;
+    color: var(--beige-color);
+}
+
+.homeButton {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-black);
+    font-size: 0.75rem;
+    color: var(--beige-color);
+    background-color: var(--dark-brown-color);
+    border-radius: 20px;
+    border: none;
+    padding: 1rem 0rem;
+    margin-top: 5rem;
+}

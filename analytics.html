@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авто-витрати</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "stylesAnalytics.css">
+</head>
+<body>
+    <header>
+        <a href = "index.html">
+            <img src = "assets/logo.png">
+            <h1>CarExpenses</h1>
+        </a>
+    </header>
+
+    <main>
+        <h2>Аналітика</h2>
+
+        <article>
+            <section class = "container">
+                <div class = "info">
+                    <p>Витрачені кошти:</p>
+                    <p><span id = "totalMoney">1200</span>₴</p>
+                </div>
+
+                <img src = "assets/emojiMoney.png" alt = "money">
+            </section>
+
+            <section class = "container">
+                <div class = "info">
+                    <p>Пробіг за 90 днів:</p>
+                    <p><span id = "totalMileage">1200</span>км</p>
+                </div>
+
+                <img src = "assets/emojiMoped.png" alt = "money" class = "right">
+            </section>
+
+            <section class = "container">
+                <div class = "info">
+                    <p>Кошти на паливо:</p>
+                    <p><span id = "fuelCosts">1200</span>₴</p>
+                </div>
+
+                <img src = "assets/emojiFuel.png" alt = "money">
+            </section>
+
+            <section class = "container">
+                <div class = "info">
+                    <p>Записів за 90 днів:</p>
+                    <p><span id = "recordsCount">1200</span></p>
+                </div>
+
+                <img src = "assets/emojiTicket.png" alt = "money" class = "right">
+            </section>
+        </article>
+
+        <button class = "homeButton" id = "homeButton">Повернутися на головну</button>
+    </main>
+
+    <script src = "scriptAnalytics.js"></script>
+</body>
+</html>
