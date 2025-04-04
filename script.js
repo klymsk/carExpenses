@@ -38,19 +38,33 @@ function loadContainer() {
                 </div>
             </div>
 
-            <div class = "buttons">
-                <button>
-                    <img src = "assets/edit.png">
+            <div class="buttons">
+                <button class="editButton">
+                    <img src="assets/edit.png">
                 </button>
-                <button>
-                    <img src = "assets/delete.png">
+                <button class="deleteButton" data-index="${index}">
+                    <img src="assets/delete.png">
                 </button>
             </div>
         `;
 
         main.appendChild(containerCreate);
     });
+
+    document.querySelectorAll(".deleteButton").forEach(button => {
+        button.addEventListener("click", function () {
+            const index = this.getAttribute("data-index");
+            deleteExpense(index);
+        });
+    });
 };
+
+function deleteExpense(index) {
+    let expenses = JSON.parse(localStorage.getItem("expenses")) || [];
+    expenses.splice(index, 1); 
+    localStorage.setItem("expenses", JSON.stringify(expenses)); 
+    location.reload();
+}
 
 loadContainer();
 
